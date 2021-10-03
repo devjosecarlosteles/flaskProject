@@ -5,11 +5,18 @@
     <title>Title</title>
 </head>
 <body>
+    <h4>Perfil</h4>
     <span>Olá, {{ name }}!</span><br/>
     {% if age < 18 %}
     <span>Infelizmente é necessário ter mais de 18 anos para acessar o conteúdo!</span>
     {%else%}
     <span>Seja bem vindo!</span>
     {% endif %}
+    <hr />
+    <h4>Objetivos</h4>
+    {% for i in range(0, list|count) %}
+        Listando: {{ list[i] }} <br/>
+    {% endfor %}
+    <hr />
 </body>
 </html>
