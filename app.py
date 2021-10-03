@@ -4,6 +4,6 @@ app = Flask("flaskProject")
 
 @app.route("/")
 def hello_world():
-    return "Olá Mundo! Esse é meu primeiro projeto flask!", 200
+    return render_template("index.html"), 200
 
 app.run()
