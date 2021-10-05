@@ -5,18 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-    <h4>Perfil</h4>
-    <span>Olá, {{ name }}!</span><br/>
-    {% if age < 18 %}
-    <span>Infelizmente é necessário ter mais de 18 anos para acessar o conteúdo!</span>
-    {%else%}
-    <span>Seja bem vindo!</span>
-    {% endif %}
-    <hr />
-    <h4>Objetivos</h4>
-    {% for i in range(0, list|count) %}
-        Listando: {{ list[i] }} <br/>
-    {% endfor %}
-    <hr />
+    <header>
+        <nav>
+            <a href="/">HOME</a>
+            <a href="/perfil">PERFIL</a>
+            <a href="/about">SOBRE</a>
+        </nav>
+    </header>
+    <h2>Seja bem vindo ao meu repositório!</h2>
+    <p>
+        Nesse repositório irei testar algumas funções do <strong>Flask</strong>!
+        <br>
+        Acessando a aba <a>Perfil</a> é possível passar parâmetros para uma "fake account".
+    </p>
 </body>
 </html>
